@@ -6,7 +6,7 @@ from kafka import KafkaProducer
 
 def producer():
     producer = KafkaProducer (
-    bootstrap_servers=['192.168.56.1:9092'],
+    bootstrap_servers=['your address ip:9092'],
     value_serializer=lambda v: json.dumps(v).encode('utf-8'))
 
     with open('C:/Users/chaou/Desktop/projet3/data.csv') as file:
